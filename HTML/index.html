@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu d'osselets - Cult of the Lamb</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body onload="Lancer()"> <!-- Le dé est lancé au chargement de la page -->
+    <div class="divDe">
+        <div id="divResDe">
+            <p class="grid-item" id="Score"> 0 - 0 </p>
+            <p class="grid-item" id="ResDe"></p> <!-- Affiche le résultat du dé -->
+        </div>
+        <div class="divPlateau">
+            <div id="J1">
+                <h1>Joueur 1</h1>
+                <div class="grid-container">
+                    <p class="grid-item" id="case1-J1" onclick="Coup(0, true)"></p>
+                    <p class="grid-item" id="case2-J1" onclick="Coup(1, true)"></p>
+                    <p class="grid-item" id="case3-J1" onclick="Coup(2, true)"></p>
+                    <p class="grid-item" id="case4-J1" onclick="Coup(3, true)"></p>
+                    <p class="grid-item" id="case5-J1" onclick="Coup(4, true)"></p>
+                    <p class="grid-item" id="case6-J1" onclick="Coup(5, true)"></p>
+                    <p class="grid-item" id="case7-J1" onclick="Coup(6, true)"></p>
+                    <p class="grid-item" id="case8-J1" onclick="Coup(7, true)"></p>
+                    <p class="grid-item" id="case9-J1" onclick="Coup(8, true)"></p>
+                </div>
+            </div>
+            <div id="J2">
+                <h1>Joueur 2</h1>
+                <div class="grid-container">
+                    <p class="grid-item" id="case1-J2" onclick="Coup(0, false)"></p>
+                    <p class="grid-item" id="case2-J2" onclick="Coup(1, false)"></p>
+                    <p class="grid-item" id="case3-J2" onclick="Coup(2, false)"></p>
+                    <p class="grid-item" id="case4-J2" onclick="Coup(3, false)"></p>
+                    <p class="grid-item" id="case5-J2" onclick="Coup(4, false)"></p>
+                    <p class="grid-item" id="case6-J2" onclick="Coup(5, false)"></p>
+                    <p class="grid-item" id="case7-J2" onclick="Coup(6, false)"></p>
+                    <p class="grid-item" id="case8-J2" onclick="Coup(7, false)"></p>
+                    <p class="grid-item" id="case9-J2" onclick="Coup(8, false)"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <script src="../JS/script.js"></script>
+    </footer>
+</body>
+</html>

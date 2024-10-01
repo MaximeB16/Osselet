@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'MaPolice';
+    src: url('../POLICE/cult-of-the-toucan/Cult\ of\ the\ toucan.ttf') format('truetype');
+}
+
+*{
+    font-family: 'MaPolice';
+    font-weight: bold;
+    border-radius: 3rem;
+}
+
+html{
+    background-image:url("../IMAGE/22575027-abstrait-panoramique-contexte-avec-enfer-paysage-fond-d-ecran-ai-genere-gratuit-photo.jpeg");
+    background-size: cover; /* L'image couvre tout l'élément */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    height: 100vh; /* Assurez-vous que le corps occupe toute la hauteur de la fenêtre */
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+    grid-template-rows: repeat(3, 1fr);    /* 3 lignes égales */
+    gap: 10px; /* Espace entre les cellules de la grille */
+    width: 20vw; /* La largeur ne dépasse pas 50% de la largeur de l'écran */
+    height: 20vw; /* La hauteur ne dépasse pas 50% de la largeur de l'écran (pour avoir des carrés) */
+    max-width: 20vh; /* Ne dépasse pas la moitié de la hauteur de l'écran si la largeur de l'écran est plus petite */
+    max-height: 20vh;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.grid-item{
+    background-color: white;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    aspect-ratio: 1 / 1; /* Assure que les cellules sont carrées */
+}
+
+.divPlateau{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,red,orange,red);
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    margin: 0;
+}
+
+.divDe{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#divResDe{
+    width: 40%;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image:url("../IMAGE/7c364bcc-d3af-41c4-b11a-87174de84f88.webp");
+    background-size: cover; /* L'image couvre tout l'élément */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+}
+
+#ResDe{
+    height: 20vh;
+    width: 20vw;
+    aspect-ratio: 1 / 1;
+}
+
+#Score{
+    height: 10vh;
+    width: 15vw;
+    aspect-ratio: 1 / 1;
+}
+
+#J1{
+    align-self: flex-start;
+    background-color: blue;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#J2{
+    align-self: flex-end;
+    background-color: red;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    margin: 0;
+}
